@@ -5,7 +5,24 @@
  */
 
 /* MOBILE STYLES ------------------------------------------------------------*/
-
+.bg-nav-color {
+  background-color: $green;
+}
+.button-style {
+  background-color: $white;
+}
+.text-navbar {
+  padding: 10px;
+  li {
+    a {
+      color: $white;
+      padding: 13px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
 /* MEDIA QUERY ------------------------------------------------------------*/
 
 /* Small devices (tablets, 768px and up) */
@@ -14,6 +31,13 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
+  .text-navbar {
+    li {
+      a {
+        margin-right: 30px;
+      }
+    }
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */

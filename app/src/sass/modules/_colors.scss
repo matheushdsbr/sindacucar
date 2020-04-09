@@ -11,8 +11,11 @@
 .white {
   color: $white;
 }
-.wine {
-  color: $wine;
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
 }
 
 // BACKGROUNDS ----------------------------------------------------------------
@@ -21,4 +24,10 @@
 }
 .bg-white {
   background-color: $white;
+}
+.bg-red {
+  background-color: $red;
+}
+.bg-blue {
+  background-color: $blue;
 }
