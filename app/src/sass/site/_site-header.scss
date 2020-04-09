@@ -6,6 +6,12 @@
 
 /* MOBILE STYLES ------------------------------------------------------------*/
 
+.images-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 
 /* Small devices (tablets, 768px and up) */
@@ -14,6 +20,11 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
+  .images-center {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
