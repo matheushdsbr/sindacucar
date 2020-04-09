@@ -130,19 +130,23 @@ body {
 
 .text-navbar {
   padding: 10px; }
-  .text-navbar li a {
-    color: #fff;
-    padding: 13px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold; }
+  .text-navbar li {
+    margin: 10px 0px; }
+    .text-navbar li a {
+      color: #fff;
+      padding: 13px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold; }
 
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .text-navbar li a {
-    margin-right: 30px; } }
+  .text-navbar li {
+    margin: 0px 0px; }
+    .text-navbar li a {
+      margin-right: 30px; } }
 
 /* Large devices (large desktops, 1200px and up) */
 /*
