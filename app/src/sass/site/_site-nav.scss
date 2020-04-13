@@ -24,6 +24,24 @@
     }
   }
 }
+.conteudo {
+  ul {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    list-style: none;
+    display: flex;
+    li {
+      a {
+        margin-right: 30px;
+        padding: 10px 25px;
+        text-decoration: none;
+        color: $white;
+        background-color: $green;
+        border-radius: 40px;
+      }
+    }
+  }
+}
 /* MEDIA QUERY ------------------------------------------------------------*/
 
 /* Small devices (tablets, 768px and up) */

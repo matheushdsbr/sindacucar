@@ -20,7 +20,7 @@
   color: #fff; }
 
 .blue {
-  color: blue; }
+  color: #1b5b99; }
 
 .red {
   color: red; }
@@ -35,7 +35,7 @@
   background-color: red; }
 
 .bg-blue {
-  background-color: blue; }
+  background-color: #1b5b99; }
 
 /*
  * 
@@ -91,6 +91,20 @@ body {
  * 
  */
 /* MOBILE STYLES ------------------------------------------------------------*/
+.rodape {
+  background-color: #1b5b99;
+  border-top: 5px solid #00a651;
+  color: #fff; }
+  .rodape .conteudo {
+    padding: 30px; }
+  .rodape span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center; }
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -139,6 +153,19 @@ body {
       text-transform: uppercase;
       font-weight: bold; }
 
+.conteudo ul {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  list-style: none;
+  display: flex; }
+  .conteudo ul li a {
+    margin-right: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #00a651;
+    border-radius: 40px; }
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -159,3 +186,16 @@ body {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+.eventos h2 {
+  color: #00a651; }
+
+.destaques {
+  margin-top: 6%; }
+  .destaques h2 {
+    color: #00a651; }
+
+.quem-somos img {
+  margin-left: 25%; }
+
+.meio-ambiente img {
+  margin-left: 20%; }

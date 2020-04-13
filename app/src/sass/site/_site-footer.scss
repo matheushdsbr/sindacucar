@@ -6,7 +6,21 @@
 
 /* MOBILE STYLES ------------------------------------------------------------*/
 
-footer {
+.rodape {
+  background-color: $blue;
+  border-top: 5px solid $green;
+  color: $white;
+  .conteudo {
+    padding: 30px;
+  }
+  span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+  }
 }
 
 /* MEDIA QUERY ------------------------------------------------------------*/
