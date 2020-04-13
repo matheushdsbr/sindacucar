@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="src/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="src/css/style.css" />
 
     <title>Sindaçúcar</title>
@@ -12,7 +17,9 @@
 
   <body>
     <header>
-      <div class="images-center">
+      <div
+        class="d-flex align-items-center flex-column flex-md-row justify-content-md-around my-3"
+      >
         <div><img src="./src/img/logo-sindacucar.png" alt="" /></div>
         <div><img src="./src/img/sistema-sindacucar.png" alt="" /></div>
       </div>
@@ -58,9 +65,20 @@
       </nav>
     </header>
 
-    <div>
-      <img class="img-fluid" src="./src/img/banner-main.jpg" alt="" />
-    </div>
+    <section>
+      <div class="banner">
+        <div class="slick-textos texto-banner">
+          <div>
+            <h2>PERSONA: FÓRUM NORDESTE<br />FOI PRESTIGIADÍSSIMO.</h2>
+            <h2>FOLHA DE PERNAMBUCO - DIA 30</h2>
+          </div>
+          <div>
+            <h2>PERSONA: FÓRUM NORDESTE<br />FOI PRESTIGIADÍSSIMO.</h2>
+            <h2>FOLHA DE PERNAMBUCO - DIA 30</h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div class="container">
@@ -159,8 +177,14 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="destaques col-md-2 offset-md-5">
+          <div class="destaques col-md-12">
             <h2>DESTAQUES</h2>
+            <div class="slick-cards cards">
+              <div><img src="./src/img/cards/event01.png" alt="" /></div>
+              <div><img src="./src/img/cards/event02.png" alt="" /></div>
+              <div><img src="./src/img/cards/event03.png" alt="" /></div>
+              <div><img src="./src/img/cards/event04.png" alt="" /></div>
+            </div>
           </div>
         </div>
       </div>
@@ -213,5 +237,10 @@
     <script src="src/js/jquery.js"></script>
     <script src="src/js/popper.js"></script>
     <script src="src/js/bootstrap.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>

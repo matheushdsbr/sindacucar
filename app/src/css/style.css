@@ -103,7 +103,10 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: flex-end;
-    align-content: center; }
+    align-content: center;
+    margin-bottom: 40px; }
+    .rodape span a img {
+      width: 80px; }
 
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
@@ -115,20 +118,9 @@ body {
  * 
  */
 /* MOBILE STYLES ------------------------------------------------------------*/
-.images-center {
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .images-center {
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20px; } }
-
 /* Large devices (large desktops, 1200px and up) */
 /*
  * 
@@ -254,3 +246,33 @@ body {
   .destaques h2 {
     color: #00a651;
     text-align: center; }
+  .destaques .cards {
+    display: flex;
+    align-items: center; }
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+.banner {
+  background-image: url("../img/banner-main.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 470px; }
+  .banner .texto-banner {
+    padding-top: 100px;
+    display: flex;
+    align-items: center; }
+    .banner .texto-banner h2 {
+      color: #fff;
+      display: flex;
+      font-size: 25px; }
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner .texto-banner {
+    padding: 153px 20px; } }
+
+/* Large devices (large desktops, 1200px and up) */
