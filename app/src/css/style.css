@@ -81,6 +81,9 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff; }
 
+a:hover {
+  text-decoration: none; }
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -151,19 +154,18 @@ body {
       text-transform: uppercase;
       font-weight: bold; }
 
-.navegacao-site ul {
-  list-style: none; }
-  .navegacao-site ul li {
-    border: none; }
-    .navegacao-site ul li a {
-      padding: 10px 25px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #00a651;
-      border-radius: 40px;
-      -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
-      -moz-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
-      box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54); }
+.btn-destaque {
+  background-color: #00a651;
+  display: block;
+  height: 8vh;
+  line-height: 8vh;
+  color: #fff;
+  text-align: center;
+  border-radius: 38px;
+  font-size: 12px; }
+  .btn-destaque:hover {
+    color: #fff;
+    background-color: #1b5b99; }
 
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
@@ -172,7 +174,9 @@ body {
   .text-navbar li {
     margin: 0px 0px; }
     .text-navbar li a {
-      margin-right: 30px; } }
+      margin-right: 30px; }
+  .destaque .btn-destaque {
+    width: 163px; } }
 
 /* Large devices (large desktops, 1200px and up) */
 /*
@@ -241,14 +245,10 @@ body {
       border-radius: 0px 10px 10px 0px; } }
 
 /* Large devices (large desktops, 1200px and up) */
-.destaques {
-  margin-top: 6%; }
-  .destaques h2 {
-    color: #00a651;
-    text-align: center; }
-  .destaques .cards {
-    display: flex;
-    align-items: center; }
+.destaques h2 {
+  font-size: 40px;
+  color: #00a651;
+  text-align: center; }
 
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
@@ -274,5 +274,38 @@ body {
 @media (min-width: 992px) {
   .banner .texto-banner {
     padding: 153px 20px; } }
+
+/* Large devices (large desktops, 1200px and up) */
+.quem-somos {
+  background-image: url("../img/bg-sindacucar.png");
+  padding: 32px 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .quem-somos img {
+    width: 55px; }
+  .quem-somos span {
+    transform: translateY(-50px);
+    background-color: #00a651;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 2.6rem;
+    border-radius: 50%;
+    box-shadow: 2px 3px 4px black; }
+  .quem-somos .text {
+    transform: translateY(-30px); }
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .quem-somos {
+    height: 330px;
+    padding: 0 12px; } }
 
 /* Large devices (large desktops, 1200px and up) */

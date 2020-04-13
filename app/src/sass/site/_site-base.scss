@@ -11,6 +11,10 @@ body {
   background-color: $white;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 
 /* Small devices (tablets, 768px and up) */

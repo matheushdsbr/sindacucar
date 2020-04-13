@@ -31,24 +31,16 @@
     }
   }
 }
-.navegacao-site {
-  ul {
-    list-style: none;
-    li {
-      border: none;
-      a {
-        padding: 10px 25px;
-        text-decoration: none;
-        color: $white;
-        background-color: $green;
-        border-radius: 40px;
-        -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
-        -moz-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
-        box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
+
+
+      .btn-destaque {
+        background-color: $green; display: block; height: 8vh; line-height: 8vh; color: #fff; text-align: center; border-radius: 38px; font-size: 12px;
+        &:hover {
+          color: $white;
+          background-color: $blue;
+        }
       }
-    }
-  }
-}
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 
 /* Small devices (tablets, 768px and up) */
@@ -63,6 +55,11 @@
       a {
         margin-right: 30px;
       }
+    }
+  }
+  .destaque {
+    .btn-destaque {
+      width: 163px;
     }
   }
 }
