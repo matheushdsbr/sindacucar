@@ -136,10 +136,16 @@ body {
  * 
  */
 /* MOBILE STYLES ------------------------------------------------------------*/
-.bg-nav-color {
+.bg-nav-color-green {
   background-color: #00a651; }
 
-.button-style {
+.button-style-white {
+  background-color: #fff; }
+
+.bg-nav-color-blue {
+  background-color: #1b5b99; }
+
+.button-style-white {
   background-color: #fff; }
 
 .text-navbar {
@@ -153,18 +159,19 @@ body {
       text-transform: uppercase;
       font-weight: bold; }
 
-.conteudo ul {
-  margin-top: 6%;
-  margin-bottom: 6%;
-  list-style: none;
-  display: flex; }
-  .conteudo ul li a {
-    margin-right: 30px;
-    padding: 10px 25px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #00a651;
-    border-radius: 40px; }
+.navegacao-site ul {
+  list-style: none; }
+  .navegacao-site ul li {
+    border: none; }
+    .navegacao-site ul li a {
+      padding: 10px 25px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #00a651;
+      border-radius: 40px;
+      -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
+      -moz-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
+      box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54); }
 
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
@@ -187,15 +194,63 @@ body {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 .eventos h2 {
-  color: #00a651; }
+  color: #00a651;
+  text-align: center;
+  font-size: 40px; }
 
+.eventos p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #7a7a7a; }
+
+.eventos a {
+  font-weight: bold;
+  color: #1b5b99;
+  text-decoration: none; }
+
+.eventos .box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; }
+  .eventos .box .mes {
+    background-color: #1b5b99;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 7px; }
+    .eventos .box .mes h2 {
+      color: #fff;
+      text-align: center; }
+  .eventos .box .descricao {
+    background-color: #fff;
+    border: 3px solid #1b5b99;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    position: relative; }
+    .eventos .box .descricao img {
+      width: 55px;
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      transform: translate(21%, 21%); }
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .eventos .box {
+    flex-direction: row; }
+    .eventos .box .mes {
+      border-radius: 10px 0px 0px 10px;
+      align-items: center; }
+    .eventos .box .descricao {
+      border-radius: 0px 10px 10px 0px; } }
+
+/* Large devices (large desktops, 1200px and up) */
 .destaques {
   margin-top: 6%; }
   .destaques h2 {
-    color: #00a651; }
-
-.quem-somos img {
-  margin-left: 25%; }
-
-.meio-ambiente img {
-  margin-left: 20%; }
+    color: #00a651;
+    text-align: center; }

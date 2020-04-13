@@ -1,5 +1,75 @@
 .eventos {
   h2 {
     color: $green;
+    text-align: center;
+    font-size: 40px;
   }
+  p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #7a7a7a;
+  }
+  a {
+    font-weight: bold;
+    color: $blue;
+    text-decoration: none;
+  }
+  .box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    .mes {
+      background-color: $blue;
+      color: $white;
+      font-weight: bold;
+      border-radius: 10px 10px 0px 0px;
+      display: flex;
+      justify-content: center;
+      padding: 0px 7px;
+      h2 {
+        color: $white;
+        text-align: center;
+      }
+    }
+    .descricao {
+      background-color: $white;
+      border: 3px solid $blue;
+      border-radius: 0px 0px 10px 10px;
+      padding: 10px;
+      position: relative;
+      img {
+        width: 55px;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        transform: translate(21%, 21%);
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .eventos {
+    .box {
+      flex-direction: row;
+      .mes {
+        border-radius: 10px 0px 0px 10px;
+        align-items: center;
+      }
+      .descricao {
+        border-radius: 0px 10px 10px 0px;
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
 }

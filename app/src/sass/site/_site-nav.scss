@@ -5,12 +5,19 @@
  */
 
 /* MOBILE STYLES ------------------------------------------------------------*/
-.bg-nav-color {
+.bg-nav-color-green {
   background-color: $green;
 }
-.button-style {
+.button-style-white {
   background-color: $white;
 }
+.bg-nav-color-blue {
+  background-color: $blue;
+}
+.button-style-white {
+  background-color: $white;
+}
+
 .text-navbar {
   padding: 10px;
   li {
@@ -24,20 +31,20 @@
     }
   }
 }
-.conteudo {
+.navegacao-site {
   ul {
-    margin-top: 6%;
-    margin-bottom: 6%;
     list-style: none;
-    display: flex;
     li {
+      border: none;
       a {
-        margin-right: 30px;
         padding: 10px 25px;
         text-decoration: none;
         color: $white;
         background-color: $green;
         border-radius: 40px;
+        -webkit-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
+        box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.54);
       }
     }
   }
